@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Fontawesome Logos -->
+    <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async></script>
+
+    <link rel="icon" href="pokeball.ico">
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Digivice!</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <a href="https://nahuelavalos.github.io/" target="_blank">
+            <button class="btn" type="submit">
+              <i class="fas fa-globe" style='font-size:20px;color:green;text-align: center;'></i>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/nahuelavalos92/" target="_blank">
+            <button class="btn" type="submit">
+              <i class="fab fa-linkedin-in" style='font-size:20px;color:#0e76a8;text-align: center;'></i>
+            </button>
+          </a>
+          <a href="https://github.com/nahuelavalos/pokedex-webpage.git" target="_blank">
+            <button class="btn" type="submit">
+              <i class="fab fa-github-alt" style='font-size:20px;color:black;text-align: center;'></i>
+            </button>
+          </a> 
+      </div>
+    </nav>
+
+    <div class="container">
+      <br>
+      <div class="row justify-content-center">
+          <!--div class="col-auto"-->
+          <!--/div-->
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-4" id="galeria">
+
+            <!--div class="card">
+              <br>
+
+            </div-->
+
+          </div>
+          <div class="card mb-3" id="card-id">
+           
+            <div class="input-group input-group-sm">
+              <textarea  class="form-control" aria-label="Response" aria-describedby="basic-addon1" id="response" rows="16" style="overflow:auto;resize:none;background-color:white;color:black" disabled hidden></textarea>
+            </div>
+            
+            
+          </div>
+      </div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>
