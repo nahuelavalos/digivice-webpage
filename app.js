@@ -111,7 +111,7 @@ const buscarPokemon = (datas) => {
 
     for (data of datas) {
         //// LA PAPAAAAAAAAAAAAAA 341 - SON 140
-        if(data["#"] > 12) {
+        if(data["#"] > 341) {
             break
         }
 
@@ -177,8 +177,13 @@ const buscarPokemon = (datas) => {
         
         //PNG + NAME + NUMBER
         var card = document.getElementById("card-id"+data.Digimon);
-        card.querySelector(".card-img-top").setAttribute("src", "https://digimon.shadowsmith.com/img/" + data.Digimon.toLowerCase() + ".jpg");
-        //card.querySelector(".card-img-top").setAttribute("src", "./assets/" + data.Digimon.toLowerCase() + ".jpg");
+        
+        //a = "https://digimon.shadowsmith.com/img/" + data.Digimon.toLowerCase() + ".jpg"
+        
+        //card.querySelector(".card-img-top").setAttribute("src", "https://digimon.shadowsmith.com/img/" + data.Digimon.toLowerCase() + ".jpg");
+        card.querySelector(".card-img-top").setAttribute("src", "./assets/" + data.Digimon.toLowerCase() + ".webp");
+        
+        
         //card.querySelector(".card-img-top").setAttribute("src", "https://github.com/weiweitoo/DCGAN-Digimon/tree/master/Digimon/120px-" + data.Digimon + ".jpg");
         //card.querySelector(".card-img-top").setAttribute("src", data["Image link"]);
         card.querySelector(".card-title").textContent = data.Digimon;
@@ -389,7 +394,40 @@ const buscarPokemon = (datas) => {
                     //card.querySelector(".type-2").setAttribute("style", "opacity: 1; background-color: red; color: white");
                     //card.querySelector(".type-2").textContent = data.Attribute;
                 //}  
-            }/*
+            }
+            if(data.Attribute == "Neutral") {
+                    card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: wheat; color: black");
+                    card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Earth") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: peru; color: white");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Plant") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: green; color: white");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Electric") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: yellow; color: black");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Dark") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: black; color: white");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Light") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: pink; color: black");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Water") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: dodgerblue; color: white");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            if(data.Attribute == "Wind") {
+                card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: rebeccapurple; color: white");
+                card.querySelector(".type-1").textContent = data.Attribute;
+            }
+            /*
             if(data.type[i] == "Water") {
                 if(i==0) {
                     card.querySelector(".type-1").setAttribute("style", "opacity: 1; background-color: dodgerblue; color: white");
